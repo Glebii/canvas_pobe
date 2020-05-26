@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Галерея</title>
+
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">                
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      
+    <link rel="stylesheet" href="css/tooplate-style.css">                                   
+
+    
+</head>
+
+    <body>
+        
+        <div class="container">
+            <header class="tm-site-header">
+                <h1 class="tm-site-name">Закир Калкабаев</h1>
+                <p class="tm-site-description">художник-портретист</p>
+                
+                <nav class="navbar navbar-expand-md tm-main-nav-container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tmMainNav" aria-controls="tmMainNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse tm-main-nav" id="tmMainNav">
+                        <ul class="nav nav-fill tm-main-nav-ul">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Главное</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="preview.html">Каталог</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
+                        </ul>
+                    </div>    
+                </nav>
+                
+            </header>
+            
+            <div class="tm-main-content no-pad-b">
+                    
+                <section class="row tm-item-preview">
+                    <div class="col-md-6 col-sm-12 mb-md-0 mb-5">
+                        <img src="img2/image-09.jpg" alt="Image" class="img-fluid tm-img-center-sm">
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <h2 class="tm-blue-text tm-margin-b-p">Байтик Баатыр</h2>
+                        <p class="tm-margin-b-p">Цветной портрет маслянными красками на холсте.</p>
+                        <p class="tm-margin-b-p">Для заказа данной работы или любой другой просим обращаться по нашим <a href="contact.html">контактам.</a></p>
+                        
+                        
+                    </div>
+                </section>
+             
+                            
+            </div>
+
+            <footer>
+                Авторское право &copy; <span class="tm-current-year">2020</span> принадлежит Закиру Калкабаеву 
+                
+                - Сайт разработан Бахтияром Закировым
+            </footer>    
+        </div>
+        
+        
+        <script src="js/jquery-1.11.3.min.js"></script>         
+        <script src="js/popper.min.js"></script>                
+        <script src="js/bootstrap.min.js"></script>             
+        <script>     
+       
+            $(document).ready(function(){
+                
+                
+                $('.tm-current-year').text(new Date().getFullYear());
+
+            });
+
+        </script>             
+
+</body>
+</html>

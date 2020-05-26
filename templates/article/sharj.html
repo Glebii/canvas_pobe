@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Галерея</title>
+
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">                
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">                                      
+    <link rel="stylesheet" href="{% static 'css/tooplate-style.css' %}">                                  
+
+    
+</head>
+
+    <body>
+        
+        <div class="container">
+            <header class="tm-site-header">
+                <h1 class="tm-site-name">Шаржи</h1>
+                                
+                <nav class="navbar navbar-expand-md tm-main-nav-container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tmMainNav" aria-controls="tmMainNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse tm-main-nav" id="tmMainNav">
+                        <ul class="nav nav-fill tm-main-nav-ul">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Главное</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="preview.html">Каталог</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
+                        </ul>
+                    </div>    
+                </nav>
+                
+            </header>
+            
+            <div class="tm-gallery">
+                <div class="row">
+                    <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                        <a href="details.html">
+                            <div class="tm-gallery-item-overlay">
+                                <img src="img2/image-05.jpg" alt="Image" class="img-fluid tm-img-center">
+                            </div>
+                            
+                            <p class="tm-figcaption">Шарж 1</p>
+                        </a>
+                    </figure>
+                    <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                        <a href="details.html">
+                            <div class="tm-gallery-item-overlay">
+                                <img src="img2/image-06.jpg" alt="Image" class="img-fluid tm-img-center">
+                            </div>
+                            <p class="tm-figcaption">Парный шарж</p>
+                        </a>
+                    </figure>
+                    <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                        <a href="details.html">
+                            <div class="tm-gallery-item-overlay">
+                                <img src="img2/image-14.jpg" alt="Image" class="img-fluid tm-img-center">
+                            </div>
+                            <p class="tm-figcaption">Шарж бывшей шефиньи</p>
+                        </a>
+                    </figure>
+                    <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                        <a href="details.html">
+                            <div class="tm-gallery-item-overlay">
+                                <img src="img2/image-15.jpg" alt="Image" class="img-fluid tm-img-center">
+                            </div>
+                            <p class="tm-figcaption">Шарж сестры коллеги</p>
+                        </a>
+                    </figure>
+                    <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                        <a href="details.html">
+                            <div class="tm-gallery-item-overlay">
+                                <img src="img2/image-16.jpg" alt="Image" class="img-fluid tm-img-center">
+                            </div>
+                            <p class="tm-figcaption">Шарж главбуха</p>
+                        </a>
+                    </figure>
+                    <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                        <a href="details.html">
+                            <div class="tm-gallery-item-overlay">
+                                <img src="img2/image-33.jpg" alt="Image" class="img-fluid tm-img-center">
+                            </div>
+                            <p class="tm-figcaption">Шарж 2</p>
+                        </a>
+                    </figure>
+                    <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                        <a href="details.html">
+                            <div class="tm-gallery-item-overlay">
+                                <img src="img2/image-34.jpg" alt="Image" class="img-fluid tm-img-center">
+                            </div>
+                            <p class="tm-figcaption">Шарж 3</p>
+                        </a>
+                    </figure>
+                    <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                        <a href="details.html">
+                            <div class="tm-gallery-item-overlay">
+                                <img src="img2/image-35.jpg" alt="Image" class="img-fluid tm-img-center">
+                            </div>
+                            <p class="tm-figcaption">Шарж 5</p>
+                        </a>
+                    </figure>
+
+                </div>   
+            </div>                   
+                            
+            </div>
+
+            <footer>
+                Авторское право &copy; <span class="tm-current-year">2020</span> принадлежит Закиру Калкабаеву 
+                
+                - Сайт разработан Бахтияром Закировым
+            </footer>    
+        </div>
+        
+        
+        <script src="js/jquery-1.11.3.min.js"></script>         
+        <script src="js/popper.min.js"></script>                
+        <script src="js/bootstrap.min.js"></script>             
+        <script>     
+       
+            $(document).ready(function(){
+                
+                
+                $('.tm-current-year').text(new Date().getFullYear());
+
+            });
+
+        </script>            
+
+</body>
+</html>
